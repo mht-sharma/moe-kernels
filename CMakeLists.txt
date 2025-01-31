@@ -186,7 +186,8 @@ set(VLLM_EXT_SRC
   "csrc/activation_kernels.cu"
   "csrc/moe/torch_bindings.cpp"
   "csrc/moe/moe_align_sum_kernels.cu"
-  "csrc/moe/topk_softmax_kernels.cu")
+  "csrc/moe/topk_softmax_kernels.cu"
+  "csrc/quantization/fp8/common.cu")
 
 set_gencode_flags_for_srcs(
   SRCS "${VLLM_EXT_SRC}"
